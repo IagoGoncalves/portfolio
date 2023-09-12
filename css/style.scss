@@ -594,12 +594,7 @@ body {
       .swiper-container {
         overflow: hidden;
         .swiper-wrapper {
-          .swiper-slide-prev,
-          .swiper-slide-next {
-            opacity: 0 !important;
-          }
           .swiper-slide {
-            opacity: 1;
             a {
               display: block;
               text-align: center;
