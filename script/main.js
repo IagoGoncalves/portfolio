@@ -29,23 +29,55 @@ window.addEventListener("focus", () => {
     document.title = docTitle;
 })
 
-// Swiper Projetos
-var swiper = new Swiper('.projetos-swiper', {
-    slidesPerView: 3,
-    spaceBetween: 30,		
-    speed: 3500,
-    loop: true,		
-    breakpoints: {
-        1300: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-        },
-        990: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        }   
+//Dinamic Slide
+document.addEventListener('DOMContentLoaded', function() {
+var slides = [
+    {
+      href: 'https://gabrielacontesini.com.br/',
+      src: 'images/projects/mockup-gabriela.png',
+      titulo: 'Gabriela Contesini',
+      conteudo: 'Projeto desenvolvido para a psicóloga Gabriela Contesini. Com este auxílio, espero contribuir indiretamente para o bem-estar do próximo.',
     },
-    autoplay: {
-        delay: 1000,
+    {
+      href: 'https://exemplo.com',
+      src: 'images/projects/image-sobre.jpg',
+      titulo: 'Título 2',
+      conteudo: 'Conteúdo 2',
     },
+];
+var swiper = new Swiper('.swiper-container', {});
+
+slides.forEach(function (slideData) {
+    var slide = document.createElement('div');
+    slide.classList.add('swiper-slide', 'align');
+  
+    var link = document.createElement('a');
+    link.href = slideData.href;
+    link.target = '_blank';
+  
+    var image = document.createElement('img');
+    image.src = slideData.src;
+    image.alt = '';
+  
+    var content = document.createElement('div');
+    content.classList.add('align');
+  
+    var titulo = document.createElement('h3');
+    titulo.textContent = slideData.titulo;
+  
+    var conteudo = document.createElement('p');
+    conteudo.textContent = slideData.conteudo;
+  
+    content.appendChild(titulo);
+    content.appendChild(conteudo);
+  
+    link.appendChild(image);
+    link.appendChild(content);
+  
+    slide.appendChild(link);
+  
+    swiper.appendSlide(slide);
+  });
+  
+  swiper.update();
 });
