@@ -48,6 +48,85 @@ p {
 body {
   font-family: "Fira Sans", sans-serif;
   background-color: $azul-preto;
+  .menu {
+    position: fixed;
+    z-index: 999;
+    border-radius: 6px;
+    background: rgba(255, 251, 251, 0.15);
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
+    padding: 30px 15px;
+    left: 40px;
+    top: 50%;
+    transform: translate(10px, -50%);
+    width: 35px;
+    overflow: hidden;
+    transition: all 0.3s;
+    ul {
+      list-style: none;
+      margin: 0;
+      flex-direction: column;
+      padding: 0;
+      align-items: flex-start;
+
+      li {
+        margin: 0 0 50px 0;
+
+        a {
+          text-decoration: none;
+          transition: all 0.2s;
+
+          span {
+            color: $azul-branco;
+            margin-left: 25px;
+            font-size: 18px;
+          }
+
+          &:hover {
+            filter: drop-shadow(0px 0px 2px #accfd0);
+            transition: all 0.2s;
+          }
+        }
+
+        &:nth-child(6) {
+          margin: 0;
+        }
+      }
+    }
+
+    @media only screen and (min-width: 990px) {
+      &:hover {
+        width: 180px;
+        transition: all 0.3s;
+      }
+    }
+
+    @media only screen and (max-width: 990px) {
+      width: 100%;
+      overflow: auto;
+      top: auto;
+      bottom: 0;
+      left: 50%;
+      right: unset;
+      transform: translate(-50%, 0px);
+      padding: 15px;
+
+      ul {
+        justify-content: space-evenly;
+        flex-direction: unset;
+
+        li {
+          margin: 0;
+
+          a {
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
   .banner {
     background-image: url("/images/fundo-initial.jpg");
     background-size: cover;
@@ -136,6 +215,8 @@ body {
     padding: 150px 0;
     position: relative;
     .group {
+      position: relative;
+      z-index: 5;
       background: linear-gradient(
         46.79deg,
         rgba(58, 94, 104, 0) -30.47%,

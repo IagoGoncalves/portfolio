@@ -5,11 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="script/main.js"></script>
 
     <title>Iagodev - Programação</title>
   </head>
-  <body>
+  <body id="home">
+    <nav id="menu" class="menu">
+			<ul class="align">			
+				<li><a href="#home" class="logo scroll align" title="Iagodev">
+					<img loading="lazy" src="images/logo-menu.png"/>
+					<span>IagoDev</span>
+				</a></li>
+				<li><a href="#about" class="scroll align" title="Informações">
+					<img loading="lazy" src="images/sobre.png"/>
+					<span>Informações</span>
+				</a></li>
+				<li><a href="#skills" class="scroll align" title="Skills">
+					<img loading="lazy" src="images/skills.png"/>
+					<span>Habilidades</span>
+				</a></li>
+				<li><a href="#cv" class="scroll align" title="Formação/Experiência">
+					<img loading="lazy" src="images/formacao.png"/>
+					<span>Curriculo</span>
+				</a></li>					
+				<li><a href="#projects" class="scroll align" title="Projetos">
+					<img loading="lazy" src="images/projeto.png"/>
+					<span>Projetos</span>
+				</a></li>
+				<li><a href="#footer" class="scroll align" title="contato">
+					<img loading="lazy" src="images/contato.png"/>
+					<span>Contato</span>
+				</a></li>
+			</ul>
+		</nav>
     <section class="banner">
       <article class="align-between">
         <div>
@@ -21,9 +53,9 @@
         </figure>
       </article>
     </section>
-    <section class="about align-between">
+    <section class="about align-between" id="about">
       <figure>
-        <img src="/images/image-sobre.jpg" alt="" />
+        <img src="images/image-sobre.jpg" alt="" />
       </figure>
       <div class="card">
         <h2>Um Pouco Sobre Mim</h2>
@@ -55,7 +87,7 @@
         >
       </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="group">
         <h2>Skills</h2>
 				<article>
@@ -235,7 +267,7 @@
 				</article>
       </div>
     </section>
-    <section class="cv">
+    <section class="cv" id="cv">
       <article>
         <h2>Formação</h2>
         <div>
@@ -282,7 +314,31 @@
         </div>
       </article>
     </section>
-    <section class="projects"></section>
+    <section class="projects" id="projects">
+      <div class="group">
+        <h2>Meus Projetos</h2>
+				<div class="swiper-container projetos-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide align">
+              <img src="" alt="">
+              <a class="align" data-toggle="modal" data-target="img">
+                <h3>titulo</h3>
+                <p>conteudo</p>
+              </a>
+            </div>		
+          </div> 
+        </div>
+        <div class="modal fade" id="" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>imagem</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
-  <footer></footer>
+  <footer id="footer"></footer>
 </html>
