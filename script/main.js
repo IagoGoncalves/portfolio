@@ -39,13 +39,34 @@ var slides = [
       conteudo: 'Projeto desenvolvido para a psicóloga Gabriela Contesini. Com este auxílio, espero contribuir indiretamente para o bem-estar do próximo.',
     },
     {
+      href: 'https://imobiliariaportaldeminas.com.br/',
+      src: 'images/projects/mockup-portal-minas.png',
+      titulo: 'Imobiliaria Portal de Minas',
+      conteudo: 'Conteúdo 2',
+    },
+    {
+      href: 'https://extremaforte.com.br/',
+      src: 'images/projects/mockup-extremaforte.png',
+      titulo: 'Imobiliaria Portal de Minas',
+      conteudo: 'Conteúdo 2',
+    },
+    {
       href: 'https://exemplo.com',
-      src: 'images/projects/image-sobre.jpg',
-      titulo: 'Título 2',
+      src: 'images/projects/mockup-feira-de-extrema.png',
+      titulo: 'Imobiliaria Portal de Minas',
       conteudo: 'Conteúdo 2',
     },
 ];
-var swiper = new Swiper('.swiper-container', {});
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+      spaceBetween: 100,
+      effect: "coverflow",
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+});
 
 slides.forEach(function (slideData) {
     var slide = document.createElement('div');
