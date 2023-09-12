@@ -10,6 +10,20 @@ $azul-claro: #accfd0;
 $azul-branco: #e7f6f2;
 
 // Customs Variables
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $cinza;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  background: $azul-branco;
+}
+
 .align {
   display: flex;
   justify-content: center;
@@ -38,6 +52,7 @@ body {
     background-image: url("/images/fundo-initial.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
     article {
       height: 100vh;
       margin: 0 250px;
@@ -53,8 +68,23 @@ body {
         }
       }
     }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 72.29%,
+        $azul-preto 100%
+      );
+    }
   }
   .about {
+    position: relative;
     margin: 100px 250px;
     .card {
       width: 55%;
@@ -95,6 +125,375 @@ body {
         &:hover {
           border: 1px solid #accfd0;
           box-shadow: 0px 0px 15px -5px #accfd0;
+        }
+      }
+    }
+  }
+  .skills {
+    background-image: url(../images/fundo-skills.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+    position: relative;
+    .group {
+      background: linear-gradient(
+        46.79deg,
+        rgba(58, 94, 104, 0) -30.47%,
+        rgba(0, 0, 0, 0.8) 146.2%,
+        rgba(172, 207, 208, 0.8) 158.07%
+      );
+      backdrop-filter: blur(2px);
+      margin: 0 250px;
+      border-radius: 30px;
+      padding: 55px 100px;
+      h2 {
+        margin-bottom: 80px;
+        color: $azul-claro;
+        text-align: center;
+      }
+      article {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        flex-flow: wrap;
+        div {
+          svg {
+            margin: 40px;
+            path {
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .html {
+          &:hover {
+            .p1 {
+              fill: #e44f26;
+              transition: all 0.3s;
+            }
+
+            .p2 {
+              fill: #f1662a;
+              transition: all 0.3s;
+            }
+
+            .p3 {
+              fill: #ebebeb;
+              transition: all 0.3s;
+            }
+
+            .p4 {
+              fill: #fff;
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .flutter {
+          &:hover {
+            .p1 {
+              fill: #47c5fb;
+              transition: all 0.3s;
+            }
+
+            .p2 {
+              fill: #00569e;
+              transition: all 0.3s;
+            }
+
+            .p3 {
+              fill: #00b5f8;
+              transition: all 0.3s;
+            }
+
+            .p4 {
+              fill: url(#paint0_linear_74_504);
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .wordpress {
+          &:hover {
+            .p1 {
+              fill: #21759b;
+              transition: all 0.3s;
+            }
+
+            .p2 {
+              fill: #21759b;
+              transition: all 0.3s;
+            }
+
+            .p3 {
+              fill: #21759b;
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .css {
+          &:hover {
+            .p1 {
+              fill: #1572b6;
+              transition: all 0.3s;
+            }
+
+            .p2 {
+              fill: #33a9dc;
+              transition: all 0.3s;
+            }
+
+            .p3 {
+              fill: #fff;
+              transition: all 0.3s;
+            }
+
+            .p4 {
+              fill: #ebebeb;
+              transition: all 0.3s;
+            }
+
+            .p5 {
+              fill: #fff;
+              transition: all 0.3s;
+            }
+
+            .p6 {
+              fill: #ebebeb;
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .photoshop {
+          &:hover {
+            .p1 {
+              fill: #001e36;
+              transition: all 0.3s;
+            }
+
+            .p2 {
+              fill: #31a8ff;
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .jquery {
+          &:hover {
+            .p1 {
+              fill: #21759b;
+              transition: all 0.3s;
+            }
+
+            .p2 {
+              fill: #21759b;
+              transition: all 0.3s;
+            }
+
+            .p3 {
+              fill: #21759b;
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .js {
+          &:hover {
+            .p1 {
+              fill: #e9ca32;
+              transition: all 0.3s;
+            }
+
+            .p2 {
+              fill: #ffde25;
+              transition: all 0.3s;
+            }
+
+            .p3 {
+              fill: #fff;
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .xd {
+          &:hover {
+            .p1 {
+              fill: #470137;
+              transition: all 0.3s;
+            }
+
+            .p2 {
+              fill: #ff61f6;
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .boot {
+          &:hover {
+            .p1 {
+              fill: #7e13f8;
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .sass {
+          &:hover {
+            .p1 {
+              fill: #cd6799;
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .figma {
+          &:hover {
+            .p1 {
+              fill: #0acf83;
+              transition: all 0.3s;
+            }
+
+            .p2 {
+              fill: #a259ff;
+              transition: all 0.3s;
+            }
+
+            .p3 {
+              fill: #f24e1e;
+              transition: all 0.3s;
+            }
+
+            .p4 {
+              fill: #ff7262;
+              transition: all 0.3s;
+            }
+
+            .p5 {
+              fill: #1abcfe;
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .github {
+          &:hover {
+            .p1 {
+              fill: #e7f6f2;
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .python {
+          &:hover {
+            .p1 {
+              fill: url(#paint0_linear_74_488);
+              transition: all 0.3s;
+            }
+
+            .p2 {
+              fill: url(#paint1_linear_74_488);
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .materialize {
+          &:hover {
+            .p1 {
+              fill: #eb7077;
+              stroke: #eb7077;
+              transition: all 0.3s;
+            }
+
+            .p2 {
+              fill: #f6a2ad;
+              stroke: #f6a2ad;
+              transition: all 0.3s;
+            }
+
+            .p3 {
+              fill: #eb7077;
+              stroke: #eb7077;
+              transition: all 0.3s;
+            }
+
+            .p4 {
+              fill: #f6a2ad;
+              stroke: #f6a2ad;
+              transition: all 0.3s;
+            }
+
+            .p5 {
+              fill: #eb7077;
+              stroke: #eb7077;
+              transition: all 0.3s;
+            }
+          }
+        }
+
+        .woo {
+          &:hover {
+            .p1 {
+              fill: #7f54b3;
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 80.29%,
+        $azul-preto 100%
+      );
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 80.29%,
+        $azul-preto 100%
+      );
+    }
+  }
+  .cv {
+    margin: 100px 250px;
+    display: flex;
+    article {
+      width: 50%;
+      display: grid;
+      gap: 30px;
+      h2 {
+        color: $azul-claro;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+      }
+      div {
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          color: #fff;
+          margin: 0 0 5px 0;
         }
       }
     }
