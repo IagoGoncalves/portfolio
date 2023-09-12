@@ -1,0 +1,49 @@
+@import "reset",
+  url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+
+$cinza: #2c3131;
+$preto: #031317;
+$azul-preto: #05191f;
+$azul-marinho: #0c2b33;
+$azul: #3a5e68;
+$azul-claro: #accfd0;
+$azul-branco: #e7f6f2;
+
+// Customs Variables
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.align-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+//
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  background-color: $azul-preto;
+  .banner {
+    background-image: url("/images/fundo-initial.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    article {
+      height: 100vh;
+      margin: 0 250px;
+      div {
+        h2 {
+          color: $azul-claro;
+          font-size: 48px;
+          font-weight: 300;
+        }
+        h1 {
+          font-size: 72px;
+          font-weight: 300;
+          color: $azul-branco;
+        }
+      }
+    }
+  }
+}
