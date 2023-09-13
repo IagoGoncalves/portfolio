@@ -1,2 +1,624 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,700&display=swap");html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}table{border-collapse:collapse;border-spacing:0}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#2c3131;border-radius:10px}::-webkit-scrollbar-thumb{-webkit-border-radius:10px;background:#e7f6f2}.align{display:flex;justify-content:center;align-items:center}.align-between{display:flex;justify-content:space-between;align-items:center}h2{font-size:48px}p{color:#fff;font-size:18px;font-weight:300;line-height:1.3}body{font-family:"Fira Sans", sans-serif;background-color:#05191f}body .menu{position:fixed;z-index:999;border-radius:6px;background:rgba(255,251,251,0.15);backdrop-filter:blur(35px);-webkit-backdrop-filter:blur(35px);padding:30px 15px;left:40px;top:50%;transform:translate(10px, -50%);width:35px;overflow:hidden;transition:all 0.3s}body .menu ul{list-style:none;margin:0;flex-direction:column;padding:0;align-items:flex-start}body .menu ul li{margin:0 0 50px 0}body .menu ul li a{text-decoration:none;transition:all 0.2s}body .menu ul li a span{color:#e7f6f2;margin-left:25px;font-size:18px}body .menu ul li a:hover{filter:drop-shadow(0px 0px 2px #accfd0);transition:all 0.2s}body .menu ul li:nth-child(6){margin:0}@media only screen and (min-width: 990px){body .menu:hover{width:180px;transition:all 0.3s}}@media only screen and (max-width: 990px){body .menu{width:100%;overflow:auto;top:auto;bottom:0;left:50%;right:unset;transform:translate(-50%, 0px);padding:15px}body .menu ul{justify-content:space-evenly;flex-direction:unset}body .menu ul li{margin:0}body .menu ul li a span{display:none}}body .banner{background-image:url("../images/fundo-initial.jpg");background-size:cover;background-repeat:no-repeat;position:relative}body .banner article{height:100vh;margin:0 250px}body .banner article div h2{color:#accfd0;font-weight:300}body .banner article div h1{font-size:72px;font-weight:300;color:#e7f6f2}body .banner:before{content:"";position:absolute;width:100%;height:100%;left:0;bottom:0;z-index:1;background:linear-gradient(180deg, transparent 72.29%, #05191f 100%)}body .about{position:relative;margin:100px 250px}body .about .card{width:55%}body .about .card h2{color:#accfd0}body .about .card>p{margin:20px 0 30px 0}body .about .card span{display:flex;align-items:center;margin-bottom:25px}body .about .card span b{color:#fff;font-weight:bold;font-size:18px;margin-right:7px}body .about .card a{display:block;width:fit-content;color:#fff;font-weight:400;font-size:20px;padding:12px 30px;text-decoration:none;background:linear-gradient(46.79deg, rgba(58,94,104,0) -8.47%, rgba(58,94,104,0.8) 146.2%, rgba(172,207,208,0.8) 158.07%);border:1px solid #3a5e68;border-radius:5px;transition:all 0.3s}body .about .card a:hover{border:1px solid #accfd0;box-shadow:0px 0px 15px -5px #accfd0}body .skills{background-image:url(../images/fundo-skills.jpg);background-size:cover;background-repeat:no-repeat;padding:150px 0;position:relative}body .skills .group{position:relative;z-index:5;background:linear-gradient(46.79deg, rgba(58,94,104,0) -30.47%, rgba(0,0,0,0.8) 146.2%, rgba(172,207,208,0.8) 158.07%);backdrop-filter:blur(2px);margin:0 250px;border-radius:30px;padding:55px 100px}body .skills .group h2{margin-bottom:80px;color:#accfd0;text-align:center}body .skills .group article{display:flex;align-items:flex-start;justify-content:center;width:100%;flex-flow:wrap}body .skills .group article div svg{margin:40px}body .skills .group article div svg path{transition:all 0.3s}body .skills .group article .html:hover .p1{fill:#e44f26;transition:all 0.3s}body .skills .group article .html:hover .p2{fill:#f1662a;transition:all 0.3s}body .skills .group article .html:hover .p3{fill:#ebebeb;transition:all 0.3s}body .skills .group article .html:hover .p4{fill:#fff;transition:all 0.3s}body .skills .group article .flutter:hover .p1{fill:#47c5fb;transition:all 0.3s}body .skills .group article .flutter:hover .p2{fill:#00569e;transition:all 0.3s}body .skills .group article .flutter:hover .p3{fill:#00b5f8;transition:all 0.3s}body .skills .group article .flutter:hover .p4{fill:url(#paint0_linear_74_504);transition:all 0.3s}body .skills .group article .wordpress:hover .p1{fill:#21759b;transition:all 0.3s}body .skills .group article .wordpress:hover .p2{fill:#21759b;transition:all 0.3s}body .skills .group article .wordpress:hover .p3{fill:#21759b;transition:all 0.3s}body .skills .group article .css:hover .p1{fill:#1572b6;transition:all 0.3s}body .skills .group article .css:hover .p2{fill:#33a9dc;transition:all 0.3s}body .skills .group article .css:hover .p3{fill:#fff;transition:all 0.3s}body .skills .group article .css:hover .p4{fill:#ebebeb;transition:all 0.3s}body .skills .group article .css:hover .p5{fill:#fff;transition:all 0.3s}body .skills .group article .css:hover .p6{fill:#ebebeb;transition:all 0.3s}body .skills .group article .photoshop:hover .p1{fill:#001e36;transition:all 0.3s}body .skills .group article .photoshop:hover .p2{fill:#31a8ff;transition:all 0.3s}body .skills .group article .jquery:hover .p1{fill:#21759b;transition:all 0.3s}body .skills .group article .jquery:hover .p2{fill:#21759b;transition:all 0.3s}body .skills .group article .jquery:hover .p3{fill:#21759b;transition:all 0.3s}body .skills .group article .js:hover .p1{fill:#e9ca32;transition:all 0.3s}body .skills .group article .js:hover .p2{fill:#ffde25;transition:all 0.3s}body .skills .group article .js:hover .p3{fill:#fff;transition:all 0.3s}body .skills .group article .xd:hover .p1{fill:#470137;transition:all 0.3s}body .skills .group article .xd:hover .p2{fill:#ff61f6;transition:all 0.3s}body .skills .group article .boot:hover .p1{fill:#7e13f8;transition:all 0.3s}body .skills .group article .sass:hover .p1{fill:#cd6799;transition:all 0.3s}body .skills .group article .figma:hover .p1{fill:#0acf83;transition:all 0.3s}body .skills .group article .figma:hover .p2{fill:#a259ff;transition:all 0.3s}body .skills .group article .figma:hover .p3{fill:#f24e1e;transition:all 0.3s}body .skills .group article .figma:hover .p4{fill:#ff7262;transition:all 0.3s}body .skills .group article .figma:hover .p5{fill:#1abcfe;transition:all 0.3s}body .skills .group article .github:hover .p1{fill:#e7f6f2;transition:all 0.3s}body .skills .group article .python:hover .p1{fill:url(#paint0_linear_74_488);transition:all 0.3s}body .skills .group article .python:hover .p2{fill:url(#paint1_linear_74_488);transition:all 0.3s}body .skills .group article .materialize:hover .p1{fill:#eb7077;stroke:#eb7077;transition:all 0.3s}body .skills .group article .materialize:hover .p2{fill:#f6a2ad;stroke:#f6a2ad;transition:all 0.3s}body .skills .group article .materialize:hover .p3{fill:#eb7077;stroke:#eb7077;transition:all 0.3s}body .skills .group article .materialize:hover .p4{fill:#f6a2ad;stroke:#f6a2ad;transition:all 0.3s}body .skills .group article .materialize:hover .p5{fill:#eb7077;stroke:#eb7077;transition:all 0.3s}body .skills .group article .woo:hover .p1{fill:#7f54b3;transition:all 0.3s}body .skills:before{content:"";position:absolute;width:100%;height:100%;left:0;bottom:0;z-index:1;background:linear-gradient(0deg, transparent 80.29%, #05191f 100%)}body .skills:after{content:"";position:absolute;width:100%;height:100%;left:0;bottom:0;z-index:1;background:linear-gradient(180deg, transparent 80.29%, #05191f 100%)}body .cv{margin:100px 250px;display:flex}body .cv article{width:50%;display:grid;gap:30px}body .cv article h2{color:#accfd0;margin-bottom:40px;text-transform:uppercase}body .cv article div h3{font-size:20px;font-weight:700;color:#fff;margin:0 0 5px 0}body .projects{background-image:url("../images/lines.png");background-size:cover;background-repeat:no-repeat}body .projects .group{margin:0 250px;padding:100px 0}body .projects .group h2{text-align:center;color:#accfd0;margin-bottom:40px}body .projects .group .swiper-container{overflow:hidden}body .projects .group .swiper-container .swiper-wrapper .swiper-slide a{display:block;text-align:center;text-decoration:none}body .projects .group .swiper-container .swiper-wrapper .swiper-slide a img{width:100%;max-width:100%;position:relative;z-index:1}body .projects .group .swiper-container .swiper-wrapper .swiper-slide a div{flex-direction:column;padding:60px 20px 30px 20px;transition:all 0.3s;background:linear-gradient(46.79deg, rgba(58,94,104,0) -8.47%, rgba(58,94,104,0.8) 146.2%, rgba(172,207,208,0.8) 158.07%);backdrop-filter:blur(2px);border-radius:4px;position:relative;top:-30px}body .projects .group .swiper-container .swiper-wrapper .swiper-slide a div h3{font-size:20px;font-weight:700;color:#fff;margin-bottom:15px}body .projects .group .swiper-container .swiper-wrapper .swiper-slide a div:hover{box-shadow:0px 0px 20px -5px #accfd0}
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2c3131;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  background: #e7f6f2;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  background-color: #05191f;
+}
+body .menu {
+  position: fixed;
+  z-index: 999;
+  border-radius: 6px;
+  background: rgba(255, 251, 251, 0.15);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  padding: 30px 15px;
+  left: 40px;
+  top: 50%;
+  transform: translate(10px, -50%);
+  width: 35px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+body .menu ul {
+  list-style: none;
+  margin: 0;
+  flex-direction: column;
+  padding: 0;
+  align-items: flex-start;
+}
+body .menu ul li {
+  margin: 0 0 50px 0;
+}
+body .menu ul li a {
+  text-decoration: none;
+  transition: all 0.2s;
+}
+body .menu ul li a span {
+  color: #e7f6f2;
+  margin-left: 25px;
+  font-size: 18px;
+}
+body .menu ul li a:hover {
+  filter: drop-shadow(0px 0px 2px #accfd0);
+  transition: all 0.2s;
+}
+body .menu ul li:nth-child(6) {
+  margin: 0;
+}
+@media only screen and (min-width: 990px) {
+  body .menu:hover {
+    width: 180px;
+    transition: all 0.3s;
+  }
+}
+@media only screen and (max-width: 990px) {
+  body .menu {
+    width: 100%;
+    overflow: auto;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    right: unset;
+    transform: translate(-50%, 0px);
+    padding: 15px;
+  }
+  body .menu ul {
+    justify-content: space-evenly;
+    flex-direction: unset;
+  }
+  body .menu ul li {
+    margin: 0;
+  }
+  body .menu ul li a span {
+    display: none;
+  }
+}
+body .banner {
+  background-image: url("../images/fundo-initial.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+body .banner article {
+  height: 100vh;
+  margin: 0 250px;
+}
+body .banner article div h2 {
+  color: #accfd0;
+  font-weight: 300;
+}
+body .banner article div h1 {
+  font-size: 72px;
+  font-weight: 300;
+  color: #e7f6f2;
+}
+body .banner:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 72.29%, #05191f 100%);
+}
+body .about {
+  position: relative;
+  margin: 100px 250px;
+}
+body .about .card {
+  width: 55%;
+}
+body .about .card h2 {
+  color: #accfd0;
+}
+body .about .card > p {
+  margin: 20px 0 30px 0;
+}
+body .about .card span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+body .about .card span b {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 7px;
+}
+body .about .card a {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 12px 30px;
+  text-decoration: none;
+  background: linear-gradient(46.79deg, rgba(58, 94, 104, 0) -8.47%, rgba(58, 94, 104, 0.8) 146.2%, rgba(172, 207, 208, 0.8) 158.07%);
+  border: 1px solid #3a5e68;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+body .about .card a:hover {
+  border: 1px solid #accfd0;
+  box-shadow: 0px 0px 15px -5px #accfd0;
+}
+body .skills {
+  background-image: url(../images/fundo-skills.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+  position: relative;
+}
+body .skills .group {
+  position: relative;
+  z-index: 5;
+  background: linear-gradient(46.79deg, rgba(58, 94, 104, 0) -30.47%, rgba(0, 0, 0, 0.8) 146.2%, rgba(172, 207, 208, 0.8) 158.07%);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  margin: 0 250px;
+  border-radius: 30px;
+  padding: 55px 100px;
+}
+body .skills .group h2 {
+  margin-bottom: 80px;
+  color: #accfd0;
+  text-align: center;
+}
+body .skills .group article {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  flex-flow: wrap;
+}
+body .skills .group article div svg {
+  margin: 40px;
+}
+body .skills .group article div svg path {
+  transition: all 0.3s;
+}
+body .skills .group article .html:hover .p1 {
+  fill: #e44f26;
+  transition: all 0.3s;
+}
+body .skills .group article .html:hover .p2 {
+  fill: #f1662a;
+  transition: all 0.3s;
+}
+body .skills .group article .html:hover .p3 {
+  fill: #ebebeb;
+  transition: all 0.3s;
+}
+body .skills .group article .html:hover .p4 {
+  fill: #fff;
+  transition: all 0.3s;
+}
+body .skills .group article .flutter:hover .p1 {
+  fill: #47c5fb;
+  transition: all 0.3s;
+}
+body .skills .group article .flutter:hover .p2 {
+  fill: #00569e;
+  transition: all 0.3s;
+}
+body .skills .group article .flutter:hover .p3 {
+  fill: #00b5f8;
+  transition: all 0.3s;
+}
+body .skills .group article .flutter:hover .p4 {
+  fill: url(#paint0_linear_74_504);
+  transition: all 0.3s;
+}
+body .skills .group article .wordpress:hover .p1 {
+  fill: #21759b;
+  transition: all 0.3s;
+}
+body .skills .group article .wordpress:hover .p2 {
+  fill: #21759b;
+  transition: all 0.3s;
+}
+body .skills .group article .wordpress:hover .p3 {
+  fill: #21759b;
+  transition: all 0.3s;
+}
+body .skills .group article .css:hover .p1 {
+  fill: #1572b6;
+  transition: all 0.3s;
+}
+body .skills .group article .css:hover .p2 {
+  fill: #33a9dc;
+  transition: all 0.3s;
+}
+body .skills .group article .css:hover .p3 {
+  fill: #fff;
+  transition: all 0.3s;
+}
+body .skills .group article .css:hover .p4 {
+  fill: #ebebeb;
+  transition: all 0.3s;
+}
+body .skills .group article .css:hover .p5 {
+  fill: #fff;
+  transition: all 0.3s;
+}
+body .skills .group article .css:hover .p6 {
+  fill: #ebebeb;
+  transition: all 0.3s;
+}
+body .skills .group article .photoshop:hover .p1 {
+  fill: #001e36;
+  transition: all 0.3s;
+}
+body .skills .group article .photoshop:hover .p2 {
+  fill: #31a8ff;
+  transition: all 0.3s;
+}
+body .skills .group article .jquery:hover .p1 {
+  fill: #21759b;
+  transition: all 0.3s;
+}
+body .skills .group article .jquery:hover .p2 {
+  fill: #21759b;
+  transition: all 0.3s;
+}
+body .skills .group article .jquery:hover .p3 {
+  fill: #21759b;
+  transition: all 0.3s;
+}
+body .skills .group article .js:hover .p1 {
+  fill: #e9ca32;
+  transition: all 0.3s;
+}
+body .skills .group article .js:hover .p2 {
+  fill: #ffde25;
+  transition: all 0.3s;
+}
+body .skills .group article .js:hover .p3 {
+  fill: #fff;
+  transition: all 0.3s;
+}
+body .skills .group article .xd:hover .p1 {
+  fill: #470137;
+  transition: all 0.3s;
+}
+body .skills .group article .xd:hover .p2 {
+  fill: #ff61f6;
+  transition: all 0.3s;
+}
+body .skills .group article .boot:hover .p1 {
+  fill: #7e13f8;
+  transition: all 0.3s;
+}
+body .skills .group article .sass:hover .p1 {
+  fill: #cd6799;
+  transition: all 0.3s;
+}
+body .skills .group article .figma:hover .p1 {
+  fill: #0acf83;
+  transition: all 0.3s;
+}
+body .skills .group article .figma:hover .p2 {
+  fill: #a259ff;
+  transition: all 0.3s;
+}
+body .skills .group article .figma:hover .p3 {
+  fill: #f24e1e;
+  transition: all 0.3s;
+}
+body .skills .group article .figma:hover .p4 {
+  fill: #ff7262;
+  transition: all 0.3s;
+}
+body .skills .group article .figma:hover .p5 {
+  fill: #1abcfe;
+  transition: all 0.3s;
+}
+body .skills .group article .github:hover .p1 {
+  fill: #e7f6f2;
+  transition: all 0.3s;
+}
+body .skills .group article .python:hover .p1 {
+  fill: url(#paint0_linear_74_488);
+  transition: all 0.3s;
+}
+body .skills .group article .python:hover .p2 {
+  fill: url(#paint1_linear_74_488);
+  transition: all 0.3s;
+}
+body .skills .group article .materialize:hover .p1 {
+  fill: #eb7077;
+  stroke: #eb7077;
+  transition: all 0.3s;
+}
+body .skills .group article .materialize:hover .p2 {
+  fill: #f6a2ad;
+  stroke: #f6a2ad;
+  transition: all 0.3s;
+}
+body .skills .group article .materialize:hover .p3 {
+  fill: #eb7077;
+  stroke: #eb7077;
+  transition: all 0.3s;
+}
+body .skills .group article .materialize:hover .p4 {
+  fill: #f6a2ad;
+  stroke: #f6a2ad;
+  transition: all 0.3s;
+}
+body .skills .group article .materialize:hover .p5 {
+  fill: #eb7077;
+  stroke: #eb7077;
+  transition: all 0.3s;
+}
+body .skills .group article .woo:hover .p1 {
+  fill: #7f54b3;
+  transition: all 0.3s;
+}
+body .skills:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 80.29%, #05191f 100%);
+}
+body .skills:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80.29%, #05191f 100%);
+}
+body .cv {
+  margin: 100px 250px;
+  display: flex;
+}
+body .cv article {
+  width: 50%;
+  display: grid;
+  gap: 30px;
+}
+body .cv article h2 {
+  color: #accfd0;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+body .cv article div h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 5px 0;
+}
+body .projects {
+  background-image: url("../images/lines.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+body .projects .group {
+  margin: 0 250px;
+  padding: 100px 0;
+}
+body .projects .group h2 {
+  text-align: center;
+  color: #accfd0;
+  margin-bottom: 40px;
+}
+body .projects .group .swiper-container {
+  overflow: hidden;
+}
+body .projects .group .swiper-container .swiper-wrapper .swiper-slide a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+body .projects .group .swiper-container .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+}
+body .projects .group .swiper-container .swiper-wrapper .swiper-slide a div {
+  transition: all 0.3s;
+  flex-direction: column;
+  padding: 60px 20px 30px 20px;
+  background: linear-gradient(46.79deg, rgba(58, 94, 104, 0) -8.47%, rgba(58, 94, 104, 0.8) 146.2%, rgba(172, 207, 208, 0.8) 158.07%);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 4px;
+  position: relative;
+  top: -30px;
+}
+body .projects .group .swiper-container .swiper-wrapper .swiper-slide a div h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+body .projects .group .swiper-container .swiper-wrapper .swiper-slide a:hover div {
+  box-shadow: 0px 0px 20px -5px #accfd0;
+}
+body .projects:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 80.29%, #05191f 100%);
+}/*# sourceMappingURL=style.css.map */

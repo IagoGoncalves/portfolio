@@ -47,25 +47,27 @@ var slides = [
     {
       href: 'https://extremaforte.com.br/',
       src: 'images/projects/mockup-extremaforte.png',
-      titulo: 'Imobiliaria Portal de Minas',
+      titulo: 'Extrema Forte',
       conteudo: 'Conteúdo 2',
     },
     {
       href: 'https://exemplo.com',
       src: 'images/projects/mockup-feira-de-extrema.png',
-      titulo: 'Imobiliaria Portal de Minas',
+      titulo: 'Feira de Extrema',
       conteudo: 'Conteúdo 2',
     },
 ];
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
-      spaceBetween: 100,
-      effect: "coverflow",
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
+  slidesPerView: 3,
+  spaceBetween: 80,
+  effect: "coverflow",
+  coverflowEffect: {
+    slideShadows: false,
+  },
+  autoplay: {
+    delay: 2800,
+    disableOnInteraction: false,
+  },
 });
 
 slides.forEach(function (slideData) {
