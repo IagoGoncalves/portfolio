@@ -33,27 +33,27 @@ window.addEventListener("focus", () => {
 document.addEventListener('DOMContentLoaded', function() {
 var slides = [
     {
+      href: 'https://consepeextrema.org/',
+      src: 'images/projects/mockup-consepe.png',
+      titulo: 'Consepe',
+      conteudo: 'Um projeto para um importante órgão público de segurança que tem como missão garantir a proteção e segurança da comunidade.',
+    },
+    {
       href: 'https://gabrielacontesini.com.br/',
       src: 'images/projects/mockup-gabriela.png',
       titulo: 'Gabriela Contesini',
       conteudo: 'Projeto desenvolvido para a psicóloga Gabriela Contesini. Com este auxílio, espero contribuir indiretamente para o bem-estar do próximo.',
     },
     {
-      href: 'https://imobiliariaportaldeminas.com.br/',
-      src: 'images/projects/mockup-portal-minas.png',
-      titulo: 'Imobiliaria Portal de Minas',
-      conteudo: 'Conteúdo 2',
+      href: 'https://goalvarenga.com.br/',
+      src: 'images/projects/mockup-goalvarenga.png',
+      titulo: 'GO Alvarenga',
+      conteudo: 'Desenvolvido com a mesma excelência e qualidade que a construtora oferece em suas obras, foi concluído um website com abordagem moderna e inovadora.',
     },
     {
-      href: 'https://extremaforte.com.br/',
-      src: 'images/projects/mockup-extremaforte.png',
-      titulo: 'Extrema Forte',
-      conteudo: 'Conteúdo 2',
-    },
-    {
-      href: 'https://exemplo.com',
-      src: 'images/projects/mockup-feira-de-extrema.png',
-      titulo: 'Feira de Extrema',
+      href: 'https://espacoveterinario.com.br/',
+      src: 'images/projects/mockup-espaco.png',
+      titulo: 'Espaço Veterinário',
       conteudo: 'Conteúdo 2',
     },
 ];
