@@ -259,6 +259,31 @@ body .banner article div h1 {
   font-weight: 300;
   color: #e7f6f2;
 }
+body .banner article figure img {
+  width: 100%;
+  max-width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  body .banner article {
+    margin: 0 150px;
+  }
+  body .banner article div h2 {
+    font-size: 48px;
+  }
+  body .banner article div h1 {
+    font-size: 54px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  body .banner article {
+    flex-direction: column;
+    justify-content: center;
+    gap: 75px;
+  }
+  body .banner article div {
+    text-align: center;
+  }
+}
 body .banner:before {
   content: "";
   position: absolute;
@@ -272,6 +297,13 @@ body .banner:before {
 body .about {
   position: relative;
   margin: 100px 250px;
+}
+body .about figure {
+  margin-right: 40px;
+}
+body .about figure img {
+  width: 100%;
+  max-width: 100%;
 }
 body .about .card {
   width: 55%;
@@ -310,6 +342,11 @@ body .about .card a {
 body .about .card a:hover {
   border: 1px solid #accfd0;
   box-shadow: 0px 0px 15px -5px #accfd0;
+}
+@media only screen and (max-width: 1200px) {
+  body .about {
+    margin: 50px 150px;
+  }
 }
 body .skills {
   background-image: url(../images/fundo-skills.jpg);
@@ -444,14 +481,6 @@ body .skills .group article .js:hover .p2 {
 }
 body .skills .group article .js:hover .p3 {
   fill: #fff;
-  transition: all 0.3s;
-}
-body .skills .group article .xd:hover .p1 {
-  fill: #470137;
-  transition: all 0.3s;
-}
-body .skills .group article .xd:hover .p2 {
-  fill: #ff61f6;
   transition: all 0.3s;
 }
 body .skills .group article .boot:hover .p1 {
