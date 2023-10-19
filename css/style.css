@@ -284,6 +284,11 @@ body .banner article figure img {
     text-align: center;
   }
 }
+@media only screen and (max-width: 600px) {
+  body .banner article {
+    margin: 0 35px;
+  }
+}
 body .banner:before {
   content: "";
   position: absolute;
@@ -365,6 +370,11 @@ body .about .card a:hover {
   }
   body .about .card a {
     margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body .about {
+    margin: 0 35px;
   }
 }
 body .skills {
@@ -600,6 +610,14 @@ body .skills:after {
     margin: 0 150px;
   }
 }
+@media only screen and (max-width: 600px) {
+  body .skills .group {
+    margin: 0 35px;
+  }
+  body .skills .group h2 {
+    margin-bottom: 15px;
+  }
+}
 body .cv {
   margin: 100px 250px;
   display: flex;
@@ -637,6 +655,12 @@ body .cv article div h3 {
   }
   body .cv article:nth-child(2) {
     margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body .cv {
+    margin: 0 35px;
+    padding: 5px 0;
   }
 }
 body .projects {
@@ -714,6 +738,11 @@ body .projects:after {
   body .projects .group {
     margin: 0 150px;
     padding: 50px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body .projects .group {
+    margin: 0 35px;
   }
 }
 
