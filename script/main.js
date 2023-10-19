@@ -54,7 +54,7 @@ var slides = [
       href: 'https://espacoveterinario.com.br/',
       src: 'images/projects/mockup-espaco.png',
       titulo: 'Espaço Veterinário',
-      conteudo: 'Conteúdo 2',
+      conteudo: 'Um lugar onde você pode contar com toda a nossa expertise e profissionalismo para cuidar da saúde do seu animalzinho',
     },
 ];
 var swiper = new Swiper('.swiper-container', {
