@@ -68,6 +68,24 @@ var swiper = new Swiper('.swiper-container', {
     delay: 2800,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    1200: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+    },
+    768: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+    },
+    640: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+    },
+    425: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+    }
+  },
 });
 
 slides.forEach(function (slideData) {

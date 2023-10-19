@@ -348,6 +348,25 @@ body .about .card a:hover {
     margin: 50px 150px;
   }
 }
+@media only screen and (max-width: 990px) {
+  body .about {
+    flex-direction: column;
+  }
+  body .about figure {
+    margin-right: 0;
+  }
+  body .about .card {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  body .about .card span {
+    justify-content: center;
+  }
+  body .about .card a {
+    margin: 0 auto;
+  }
+}
 body .skills {
   background-image: url(../images/fundo-skills.jpg);
   background-size: cover;
@@ -572,6 +591,15 @@ body .skills:after {
   z-index: 1;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80.29%, #05191f 100%);
 }
+@media only screen and (max-width: 990px) {
+  body .skills {
+    padding: 50px 0;
+  }
+  body .skills .group {
+    padding: 40px 0px;
+    margin: 0 150px;
+  }
+}
 body .cv {
   margin: 100px 250px;
   display: flex;
@@ -591,6 +619,25 @@ body .cv article div h3 {
   font-weight: 500;
   color: #fff;
   margin: 0 0 5px 0;
+}
+@media only screen and (max-width: 1200px) {
+  body .cv {
+    margin: 50px 150px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  body .cv {
+    flex-direction: column-reverse;
+  }
+  body .cv article {
+    width: 100%;
+  }
+  body .cv article h2 {
+    margin-bottom: 0px;
+  }
+  body .cv article:nth-child(2) {
+    margin-bottom: 50px;
+  }
 }
 body .projects {
   background-image: url("../images/lines.png");
@@ -663,6 +710,12 @@ body .projects:after {
   z-index: 1;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80.29%, #05191f 100%);
 }
+@media only screen and (max-width: 1200px) {
+  body .projects .group {
+    margin: 0 150px;
+    padding: 50px 0;
+  }
+}
 
 footer {
   padding: 80px 0 20px;
@@ -692,4 +745,10 @@ footer div .designer {
 }
 footer div .designer:hover {
   color: #e7f6f2;
+}
+@media only screen and (max-width: 1200px) {
+  footer {
+    padding: 50px 0 20px 0;
+    margin: 0 150px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -243,6 +243,21 @@ body {
       margin: 50px 150px;
     }
     @media only screen and (max-width: 990px) {
+      flex-direction: column;
+      figure {
+        margin-right: 0;
+      }
+      .card {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        span {
+          justify-content: center;
+        }
+        a {
+          margin: 0 auto;
+        }
+      }
     }
   }
   .skills {
@@ -579,6 +594,13 @@ body {
         $azul-preto 100%
       );
     }
+    @media only screen and (max-width: 990px) {
+      padding: 50px 0;
+      .group {
+        padding: 40px 0px;
+        margin: 0 150px;
+      }
+    }
   }
   .cv {
     margin: 100px 250px;
@@ -598,6 +620,21 @@ body {
           font-weight: 500;
           color: #fff;
           margin: 0 0 5px 0;
+        }
+      }
+    }
+    @media only screen and (max-width: 1200px) {
+      margin: 50px 150px;
+    }
+    @media only screen and (max-width: 990px) {
+      flex-direction: column-reverse;
+      article {
+        width: 100%;
+        h2 {
+          margin-bottom: 0px;
+        }
+        &:nth-child(2) {
+          margin-bottom: 50px;
         }
       }
     }
@@ -690,6 +727,12 @@ body {
         $azul-preto 100%
       );
     }
+    @media only screen and (max-width: 1200px) {
+      .group {
+        margin: 0 150px;
+        padding: 50px 0;
+      }
+    }
   }
 }
 footer {
@@ -719,5 +762,9 @@ footer {
         color: $azul-branco;
       }
     }
+  }
+  @media only screen and (max-width: 1200px) {
+    padding: 50px 0 20px 0;
+    margin: 0 150px;
   }
 }
