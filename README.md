@@ -9,9 +9,4 @@ Este é o meu portfólio, sinta-se a vontade para visualizar o código. Caso que
 
 ## Stack utilizada
 
-**Base:** Wordpress
-
-**Front-end:** PHP, Sass, Web Vanilla
-
-**Back-end:** PHP
-
+**Front-end:** Sass, Web Vanilla
