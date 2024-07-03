@@ -53,6 +53,10 @@ body {
   color: var(--text-color);
 }
 
+section{
+  outline: none;
+}
+
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
